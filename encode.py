@@ -26,6 +26,7 @@ def get_args():
     parser.add_argument('-o', '--outfile', action="store", default=sys.stdout, type=argparse.FileType('w'), help='where to write the output [stdout]')
     parser.add_argument('-s', '--squeeze', action="store_true", help='squeeze identical consecutive names into one letter')
     parser.add_argument('-i', '--ignore', action="store_false", help='ignore genes that do not match any of the names')
+    parser.add_argument('-e', '--encodings', action="store_true", help='show the names to letter encodings')
     return parser.parse_args()
 args = get_args()
 
@@ -35,22 +36,24 @@ with open(args.namefile) as fp:
 	for line,letter in zip(fp, 'ARHDCQEGNILKMFPSTWYVBOZX'):
 		names[line.rstrip().lower()] = letter
 
-#sys.stderr.write(str(names) + "\n")
+if args.encodings:
+	sys.stderr.write(str(names) + "\n")
+	exit()
 
 infile = open(args.infile, 'r')
 for record in SeqIO.parse(infile, "genbank") :
 	letters = []
 	for feature in record.features :
 		if feature.type=="CDS" :
-			letter = '*' if args.ignore else ''
-			values = " ".join(map(str,feature.qualifiers.values())).lower()
+			letter = '-' if args.ignore else ''
+			values = " ".join(map(str,feature.qualifiers.values()))
 			for name in names:
 				if re.search(rf"\b{name}\b", values, re.IGNORECASE):
 					letter = names[name]
 					break
 			letters.append(letter)
 
-	print(">" + Path(args.infile).stem)
+	args.outfile.write(">" + Path(args.infile).stem + '\n')
 	# recircularize the order so that integrase is first
 	index = letters.index(names['integrase'])
 	if letters.index(names['terminase']) < letters.index(names['portal']):
@@ -59,6 +62,7 @@ for record in SeqIO.parse(infile, "genbank") :
 		letters = list(reversed(letters[:index+1])) + list(reversed(letters[index+1:]))
 	if args.squeeze:
 		letters = [i[0] for i in groupby(letters)]
-	print("".join(letters))
+	args.outfile.write("".join(letters))
+	args.outfile.write('\n')
 					
 

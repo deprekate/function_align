@@ -14,7 +14,7 @@ def is_valid_file(x):
     return x
 
 def get_args():
-    usage = 'encode_genbank.py [-opt1, [-opt2, ...]] infile'
+    usage = 'encode_genbank.py [-opt1, [-opt2, ...]] infile namefile'
     parser = argparse.ArgumentParser(description='encode_genbank', formatter_class=RawTextHelpFormatter, usage=usage)
     parser.add_argument('infile', type=is_valid_file, help='input file in fasta format')
     parser.add_argument('namefile', type=is_valid_file, help='names file with one name per line')
@@ -33,10 +33,10 @@ names['-'] = '-'
 with open(args.infile, 'r') as fp:
 	for line in fp:
 		if line.startswith(">"):
-			print(line.replace(">", "").rstrip(), end='')
+			args.outfile.write(line.replace(">", "").rstrip())
 		else:
 			for letter in line.rstrip():
-				print('\t', end='')
-				print(names[letter], end='')
-			print()
+				args.outfile.write('\t')
+				args.outfile.write(names[letter])
+			args.outfile.write('\n')
 
