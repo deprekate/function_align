@@ -35,10 +35,8 @@ python3 align.py encoded.fasta
 ### 3 decode
 The last step is to take the multiuple sequence alignments and decode them back into gene names
 ```
-python3 decode.py encoded_aligned.fasta
+python3 decode.py encoded_aligned.fasta > decoded.tsv
 ```
-
-
 
 ### 4 plot
 We have supplied a script to plot the tab separated gene name file using matplotlib

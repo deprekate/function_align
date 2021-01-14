@@ -1,0 +1,231 @@
+
+
+
+ CLUSTAL 2.1 Multiple Sequence Alignments
+
+
+Sequence type explicitly set to Protein
+Sequence format is Pearson
+Sequence 1: AB045978       7 aa
+Sequence 2: AB243556      10 aa
+Sequence 3: AB255436       6 aa
+Sequence 4: AB285204      16 aa
+Sequence 5: AB362338       6 aa
+Sequence 6: AB370205       9 aa
+Sequence 7: AB370268       8 aa
+Sequence 8: AB775548      19 aa
+Sequence 9: AB823818      10 aa
+Sequence 10: AF069308      14 aa
+Sequence 11: AF069529      12 aa
+Sequence 12: AF125520       5 aa
+Sequence 13: AF165214      11 aa
+Sequence 14: AF195902       7 aa
+Sequence 15: AF222060      11 aa
+Sequence 16: AF242738       7 aa
+Sequence 17: AF301375       5 aa
+Sequence 18: AF323668       6 aa
+Sequence 19: AF323669       6 aa
+Start of Pairwise alignments
+Aligning...
+
+Sequences (1:2) Aligned. Score:  57
+Sequences (1:3) Aligned. Score:  100
+Sequences (1:4) Aligned. Score:  85
+Sequences (1:5) Aligned. Score:  50
+Sequences (1:6) Aligned. Score:  42
+Sequences (1:7) Aligned. Score:  57
+Sequences (1:8) Aligned. Score:  57
+Sequences (1:9) Aligned. Score:  71
+Sequences (1:10) Aligned. Score:  28
+Sequences (1:11) Aligned. Score:  71
+Sequences (1:12) Aligned. Score:  100
+Sequences (1:13) Aligned. Score:  42
+Sequences (1:14) Aligned. Score:  100
+Sequences (1:15) Aligned. Score:  42
+Sequences (1:16) Aligned. Score:  14
+Sequences (1:17) Aligned. Score:  100
+Sequences (1:18) Aligned. Score:  66
+Sequences (1:19) Aligned. Score:  66
+Sequences (2:3) Aligned. Score:  50
+Sequences (2:4) Aligned. Score:  50
+Sequences (2:5) Aligned. Score:  50
+Sequences (2:6) Aligned. Score:  66
+Sequences (2:7) Aligned. Score:  62
+Sequences (2:8) Aligned. Score:  50
+Sequences (2:9) Aligned. Score:  60
+Sequences (2:10) Aligned. Score:  60
+Sequences (2:11) Aligned. Score:  60
+Sequences (2:12) Aligned. Score:  60
+Sequences (2:13) Aligned. Score:  80
+Sequences (2:14) Aligned. Score:  57
+Sequences (2:15) Aligned. Score:  60
+Sequences (2:16) Aligned. Score:  28
+Sequences (2:17) Aligned. Score:  60
+Sequences (2:18) Aligned. Score:  66
+Sequences (2:19) Aligned. Score:  66
+Sequences (3:4) Aligned. Score:  100
+Sequences (3:5) Aligned. Score:  50
+Sequences (3:6) Aligned. Score:  83
+Sequences (3:7) Aligned. Score:  66
+Sequences (3:8) Aligned. Score:  33
+Sequences (3:9) Aligned. Score:  83
+Sequences (3:10) Aligned. Score:  33
+Sequences (3:11) Aligned. Score:  83
+Sequences (3:12) Aligned. Score:  100
+Sequences (3:13) Aligned. Score:  33
+Sequences (3:14) Aligned. Score:  100
+Sequences (3:15) Aligned. Score:  50
+Sequences (3:16) Aligned. Score:  33
+Sequences (3:17) Aligned. Score:  100
+Sequences (3:18) Aligned. Score:  50
+Sequences (3:19) Aligned. Score:  50
+Sequences (4:5) Aligned. Score:  50
+Sequences (4:6) Aligned. Score:  77
+Sequences (4:7) Aligned. Score:  62
+Sequences (4:8) Aligned. Score:  62
+Sequences (4:9) Aligned. Score:  60
+Sequences (4:10) Aligned. Score:  71
+Sequences (4:11) Aligned. Score:  83
+Sequences (4:12) Aligned. Score:  100
+Sequences (4:13) Aligned. Score:  72
+Sequences (4:14) Aligned. Score:  85
+Sequences (4:15) Aligned. Score:  54
+Sequences (4:16) Aligned. Score:  14
+Sequences (4:17) Aligned. Score:  100
+Sequences (4:18) Aligned. Score:  50
+Sequences (4:19) Aligned. Score:  50
+Sequences (5:6) Aligned. Score:  50
+Sequences (5:7) Aligned. Score:  33
+Sequences (5:8) Aligned. Score:  100
+Sequences (5:9) Aligned. Score:  50
+Sequences (5:10) Aligned. Score:  66
+Sequences (5:11) Aligned. Score:  66
+Sequences (5:12) Aligned. Score:  60
+Sequences (5:13) Aligned. Score:  50
+Sequences (5:14) Aligned. Score:  50
+Sequences (5:15) Aligned. Score:  66
+Sequences (5:16) Aligned. Score:  50
+Sequences (5:17) Aligned. Score:  60
+Sequences (5:18) Aligned. Score:  33
+Sequences (5:19) Aligned. Score:  33
+Sequences (6:7) Aligned. Score:  87
+Sequences (6:8) Aligned. Score:  55
+Sequences (6:9) Aligned. Score:  66
+Sequences (6:10) Aligned. Score:  77
+Sequences (6:11) Aligned. Score:  66
+Sequences (6:12) Aligned. Score:  80
+Sequences (6:13) Aligned. Score:  77
+Sequences (6:14) Aligned. Score:  42
+Sequences (6:15) Aligned. Score:  66
+Sequences (6:16) Aligned. Score:  14
+Sequences (6:17) Aligned. Score:  80
+Sequences (6:18) Aligned. Score:  66
+Sequences (6:19) Aligned. Score:  66
+Sequences (7:8) Aligned. Score:  50
+Sequences (7:9) Aligned. Score:  62
+Sequences (7:10) Aligned. Score:  75
+Sequences (7:11) Aligned. Score:  62
+Sequences (7:12) Aligned. Score:  60
+Sequences (7:13) Aligned. Score:  75
+Sequences (7:14) Aligned. Score:  57
+Sequences (7:15) Aligned. Score:  75
+Sequences (7:16) Aligned. Score:  14
+Sequences (7:17) Aligned. Score:  60
+Sequences (7:18) Aligned. Score:  83
+Sequences (7:19) Aligned. Score:  83
+Sequences (8:9) Aligned. Score:  50
+Sequences (8:10) Aligned. Score:  64
+Sequences (8:11) Aligned. Score:  58
+Sequences (8:12) Aligned. Score:  60
+Sequences (8:13) Aligned. Score:  54
+Sequences (8:14) Aligned. Score:  57
+Sequences (8:15) Aligned. Score:  54
+Sequences (8:16) Aligned. Score:  42
+Sequences (8:17) Aligned. Score:  60
+Sequences (8:18) Aligned. Score:  66
+Sequences (8:19) Aligned. Score:  66
+Sequences (9:10) Aligned. Score:  50
+Sequences (9:11) Aligned. Score:  70
+Sequences (9:12) Aligned. Score:  80
+Sequences (9:13) Aligned. Score:  70
+Sequences (9:14) Aligned. Score:  71
+Sequences (9:15) Aligned. Score:  40
+Sequences (9:16) Aligned. Score:  14
+Sequences (9:17) Aligned. Score:  80
+Sequences (9:18) Aligned. Score:  50
+Sequences (9:19) Aligned. Score:  50
+Sequences (10:11) Aligned. Score:  83
+Sequences (10:12) Aligned. Score:  60
+Sequences (10:13) Aligned. Score:  81
+Sequences (10:14) Aligned. Score:  28
+Sequences (10:15) Aligned. Score:  63
+Sequences (10:16) Aligned. Score:  28
+Sequences (10:17) Aligned. Score:  60
+Sequences (10:18) Aligned. Score:  66
+Sequences (10:19) Aligned. Score:  66
+Sequences (11:12) Aligned. Score:  80
+Sequences (11:13) Aligned. Score:  81
+Sequences (11:14) Aligned. Score:  71
+Sequences (11:15) Aligned. Score:  54
+Sequences (11:16) Aligned. Score:  28
+Sequences (11:17) Aligned. Score:  80
+Sequences (11:18) Aligned. Score:  50
+Sequences (11:19) Aligned. Score:  50
+Sequences (12:13) Aligned. Score:  60
+Sequences (12:14) Aligned. Score:  100
+Sequences (12:15) Aligned. Score:  20
+Sequences (12:16) Aligned. Score:  40
+Sequences (12:17) Aligned. Score:  100
+Sequences (12:18) Aligned. Score:  60
+Sequences (12:19) Aligned. Score:  60
+Sequences (13:14) Aligned. Score:  42
+Sequences (13:15) Aligned. Score:  72
+Sequences (13:16) Aligned. Score:  14
+Sequences (13:17) Aligned. Score:  60
+Sequences (13:18) Aligned. Score:  66
+Sequences (13:19) Aligned. Score:  66
+Sequences (14:15) Aligned. Score:  42
+Sequences (14:16) Aligned. Score:  14
+Sequences (14:17) Aligned. Score:  100
+Sequences (14:18) Aligned. Score:  66
+Sequences (14:19) Aligned. Score:  66
+Sequences (15:16) Aligned. Score:  42
+Sequences (15:17) Aligned. Score:  20
+Sequences (15:18) Aligned. Score:  66
+Sequences (15:19) Aligned. Score:  66
+Sequences (16:17) Aligned. Score:  40
+Sequences (16:18) Aligned. Score:  33
+Sequences (16:19) Aligned. Score:  33
+Sequences (17:18) Aligned. Score:  60
+Sequences (17:19) Aligned. Score:  60
+Sequences (18:19) Aligned. Score:  100
+Guide tree file created:   [encoded.dnd]
+
+There are 18 groups
+Start of Multiple Alignment
+
+Aligning...
+Group 1: Sequences:   2      Score:54
+Group 2: Sequences:   2      Score:63
+Group 3: Sequences:   3      Score:54
+Group 4: Sequences:   4      Score:45
+Group 5: Sequences:   5      Score:45
+Group 6: Sequences:   6      Score:52
+Group 7: Sequences:   7      Score:57
+Group 8: Sequences:   8      Score:58
+Group 9: Sequences:   2      Score:71
+Group 10: Sequences:  10      Score:58
+Group 11: Sequences:   2      Score:54
+Group 12: Sequences:   3      Score:53
+Group 13: Sequences:   4      Score:55
+Group 14: Sequences:  14      Score:49
+Group 15: Sequences:  15      Score:54
+Group 16: Sequences:  16      Score:49
+Group 17: Sequences:  18      Score:38
+Group 18: Sequences:  19      Score:27
+Alignment Score 7154
+firstres = 1 lastres = 29
+FASTA file created!
+
+Fasta-Alignment file created    [encoded_aligned.fasta]
+
