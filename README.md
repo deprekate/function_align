@@ -14,11 +14,7 @@ Provided in this repo are several sample phage genomes in GenBank format and a n
 ```
 ls gb/* | xargs -i python3 encode.py -i {} names.tsv > encoded.fasta
 python3 align.py encoded.fasta > aligned.fasta
-<<<<<<< HEAD
 python decode.py aligned.fasta names.tsv > decoded.tsv
-=======
-python3 decode.py aligned.fasta names.tsv > decoded.fasta
->>>>>>> d8f8723073cd3a4af4b0c265d230484a125eb2ed
 ```
 ------
 ## Methods
