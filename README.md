@@ -12,9 +12,13 @@ Provided in this repo are several sample phage genomes in GenBank format and a n
 
 ## Quickstart
 ```
-ls gb/* | xargs -i python3 encode.py {} names.tsv > encoded.fasta
+ls gb/* | xargs -i python3 encode.py -i {} names.tsv > encoded.fasta
 python3 align.py encoded.fasta > aligned.fasta
+<<<<<<< HEAD
+python decode.py aligned.fasta names.tsv > decoded.tsv
+=======
 python3 decode.py aligned.fasta names.tsv > decoded.fasta
+>>>>>>> d8f8723073cd3a4af4b0c265d230484a125eb2ed
 ```
 ------
 ## Methods
@@ -22,8 +26,10 @@ python3 decode.py aligned.fasta names.tsv > decoded.fasta
 For the first step, use the script `encode_genbank.py` to take a genbank file and a namesfile.  The script parses the GenBank file looking for CDS *features* (protein-coding genes).  For each *feature* the script looks for one of the words from the namesfile (with priority given to words at the top of the namesfile) in every *qualifier* field of that *feature*.
 To run the script on one genoms you can use the following command:
 ```
-python3 encode.py gb/AB045978.gb names.tsv
+python3 encode.py -i gb/AB045978.gb names.tsv
 ```
+The `-i` flag tells the script to ignore genes that are not in the name list
+
 One of the issues with aligning phage genomes is that many are circular so currently the script looks for an integrase and sets that as the beginning.  The other issue is in which direction (forward or reverse) to start adding to the gene order. Currently the script orders the direction by looking at the order of the collar and terminase genes
 
 ### 2 align
@@ -35,7 +41,7 @@ python3 align.py encoded.fasta
 ### 3 decode
 The last step is to take the multiuple sequence alignments and decode them back into gene names
 ```
-python3 decode.py encoded_aligned.fasta names.tsv
+python3 decode.py aligned.fasta names.tsv
 ```
 
 ### 4 plot
