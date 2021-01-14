@@ -20,22 +20,22 @@ python decode.py aligned.fasta names.tsv > decoded.tsv
 ## Methods
 ### 1 encode
 For the first step, use the script `encode_genbank.py` to take a genbank file and a namesfile.  The script parses the GenBank file looking for CDS *features* (protein-coding genes).  For each *feature* the script looks for one of the words from the namesfile (with priority given to words at the top of the namesfile) in every *qualifier* field of that *feature*.
-To run the script on one genoms you can use the following command:
+To run the script on one genomes you can use the following command:
 ```
 python3 encode.py -i gb/AB045978.gb names.tsv
 ```
-The `-i` flag tells the script to ignore genes that are not in the name list. There is also a `-s` flag that will merge consecitive genes with the same name, which can be useful to merge gene types which are normally situated together (like "major tail protein", "mino tail protein", "tail assembly protein" , "tail tape measure", etc). 
+The `-i` flag tells the script to ignore genes that are not in the name list. There is also a `-s` flag that will merge consecutive  genes with the same name, which can be useful to merge gene types which are normally situated together (like "major tail protein", "minor tail protein", "tail assembly protein", "tail tape measure", etc). 
 
 One of the issues with aligning phage genomes is that many are circular so currently the script looks for an integrase and sets that as the beginning.  The other issue is in which direction (forward or reverse) to start adding to the gene order. Currently the script orders the direction by looking at the order of the collar and terminase genes
 
 ### 2 align
-The second step is to do a multiple sequence alighment of all the encoded genenames. This is done using clustalw and the provided custom protein weight matrix, where the weights for matches are 9, mismatches are -9, wildcards (\*) are 0, and gaps are 0
+The second step is to do a multiple sequence alignment of all the encoded genenames. This is done using clustalw and the provided custom protein weight matrix, where the weights for matches are 9, mismatches are -9, wildcards (\*) are 0, and gaps are 0
 ```
 python3 align.py encoded.fasta
 ```
 
 ### 3 decode
-The last step is to take the multiuple sequence alignments and decode them back into gene names
+The last step is to take the multiple sequence alignments and decode them back into gene names
 ```
 python3 decode.py aligned.fasta names.tsv
 ```
@@ -46,5 +46,5 @@ We have supplied a script to plot the tab separated gene name file using matplot
 python3 plot.py decoded.tsv
 ```
 
-and the figure for the provided example genomes should look like:
+The figure for the provided example genomes should look like:
 ![](https://github.com/deprekate/function_align/blob/main/figure.png)
