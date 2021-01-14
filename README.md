@@ -2,9 +2,9 @@
 Code to multiple align a sets of ordered genes by their function 
 
 The workflow is divided into three steps:
-    1. encode gene names into letters
-	2. do multiple alignment with clustalw
-	3. decode the letters back into gene names
+1. encode gene names into letters
+2. do multiple alignment with clustalw
+3. decode the letters back into gene names
 
 
 Provided in this repo are several sample phage genomes in GenBank format and a namesfile with several common phage genes 
