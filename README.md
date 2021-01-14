@@ -16,7 +16,7 @@ ls gb/* | xargs -i python3 encode.py {} names.tsv > encoded.fasta
 python3 align.py encoded.fasta
 python decode.py encoded_aligned.fasta
 ```
-
+------
 
 For the first step, use the script `encode_genbank.py` to take a genbank file and a namesfile.  The script parses the GenBank file looking for CDS *features* (protein-coding genes).  For each *feature* the script looks for one of the words from the namesfile (with priority given to words at the top of the namesfile) in every *qualifier* field of that *feature*.
 To run the script on one genoms you can use the following command:
