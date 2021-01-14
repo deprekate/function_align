@@ -24,7 +24,7 @@ To run the script on one genoms you can use the following command:
 ```
 python3 encode.py -i gb/AB045978.gb names.tsv
 ```
-The `-i` flag tells the script to ignore genes that are not in the name list
+The `-i` flag tells the script to ignore genes that are not in the name list. There is also a `-s` flag that will merge consecitive genes with the same name, which can be useful to merge gene types which are normally situated together (like "major tail protein", "mino tail protein", "tail assembly protein" , "tail tape measure", etc). 
 
 One of the issues with aligning phage genomes is that many are circular so currently the script looks for an integrase and sets that as the beginning.  The other issue is in which direction (forward or reverse) to start adding to the gene order. Currently the script orders the direction by looking at the order of the collar and terminase genes
 
