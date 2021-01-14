@@ -1,5 +1,5 @@
 # function_align
-Code to multiple align a sets of ordered genes by their function 
+Code to multiple-align sets of ordered genes by their function (or words) 
 
 The workflow is divided into three steps:
 1. encode gene names into letters
