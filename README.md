@@ -13,8 +13,8 @@ Provided in this repo are several sample phage genomes in GenBank format and a n
 ## Quickstart
 ```
 ls gb/* | xargs -i python3 encode.py {} names.tsv > encoded.fasta
-python3 align.py encoded.fasta
-python decode.py encoded_aligned.fasta
+python3 align.py encoded.fasta > aligned.fasta
+python decode.py aligned.fasta names.tsv > decoded.fasta
 ```
 ------
 ## Methods
@@ -35,14 +35,14 @@ python3 align.py encoded.fasta
 ### 3 decode
 The last step is to take the multiuple sequence alignments and decode them back into gene names
 ```
-python3 decode.py encoded_aligned.fasta > decoded.tsv
+python3 decode.py encoded_aligned.fasta names.tsv
 ```
 
 ### 4 plot
 We have supplied a script to plot the tab separated gene name file using matplotlib
 ```
-python3 plot.py decoded.tsv names.tsv
+python3 plot.py decoded.tsv
 ```
 
-and the figure for the provided example genomes should looks like:
+and the figure for the provided example genomes should look like:
 ![](https://github.com/deprekate/function_align/blob/main/figure.png)
